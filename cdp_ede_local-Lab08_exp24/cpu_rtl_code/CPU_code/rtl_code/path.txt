@@ -1,0 +1,7 @@
+path.txt
+
+:Author: zzq
+:Email: zzq@zzq-HP-Pavilion-Gaming-Laptop-15-cx0xxx
+:Date: 2023-04-13 22:05
+
+/home/zzq/item/cdp_ede_local-Lab04_exp7/mycpu_env/gettrace/golden_trace.txt

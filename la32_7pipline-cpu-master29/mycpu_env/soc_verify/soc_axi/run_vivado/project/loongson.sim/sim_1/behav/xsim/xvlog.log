@@ -1,0 +1,167 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_ram/sim/axi_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/axi_clock_converter/sim/axi_clock_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_clock_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/ip/data_bank/sim/data_bank.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_bank
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/ip/tagv_ram/sim/tagv_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tagv_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/btb_ram/sim/btb_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btb_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/pht_ram/sim/pht_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pht_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Arith_Logic_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Arith_Logic_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Branch_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/CountReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CountReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Data_Relevant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Relevant
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2458] undeclared symbol rst_n, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/EX.v:366]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Error.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Error
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/ExStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ExStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2458] undeclared symbol to_if_obus, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/ID.v:292]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2458] undeclared symbol inst_ram_req_o, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IF.v:132]
+INFO: [VRFC 10-2458] undeclared symbol line1_now_ctl_valid, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IF.v:194]
+INFO: [VRFC 10-2458] undeclared symbol line1_now_ctl_base_valid, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IF.v:195]
+INFO: [VRFC 10-2458] undeclared symbol line2_now_ctl_valid, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IF.v:197]
+INFO: [VRFC 10-2458] undeclared symbol line2_now_ctl_base_valid, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IF.v:198]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IdCb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IdCb
+INFO: [VRFC 10-2458] undeclared symbol branch_flush_flag_o, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IdCb.v:179]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IdSq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IdSq
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IdStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IdStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IfStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IfStage
+INFO: [VRFC 10-2458] undeclared symbol line2_now_to_next_valid_o, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IfStage.v:110]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IfTCb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IfTCb
+INFO: [VRFC 10-2458] undeclared symbol branch_flush_flag_o, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IfTCb.v:176]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IfTSq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IfTSq
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IfTStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IfTStage
+WARNING: [VRFC 10-3248] data object 'inst_buffer_rdata' is already declared [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IfTStage.v:90]
+WARNING: [VRFC 10-3703] second declaration of 'inst_buffer_rdata' ignored [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IfTStage.v:90]
+INFO: [VRFC 10-2458] undeclared symbol flush, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IfTStage.v:155]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/IndetifyInstType.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IndetifyInstType
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Lanuch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lanuch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Loog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loog
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/MMCb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMCb
+INFO: [VRFC 10-2458] undeclared symbol branch_flush_o, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/MMCb.v:285]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/MMSq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMSq
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/MMStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMStage
+INFO: [VRFC 10-2458] undeclared symbol banch_flush_i, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/MMStage.v:71]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/MemStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemStage
+INFO: [VRFC 10-2458] undeclared symbol line2_pre_bus, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/MemStage.v:127]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Mmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mmu
+INFO: [VRFC 10-2458] undeclared symbol r_ibus, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Mmu.v:334]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/OpDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OpDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/PreIF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PreIF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Predict/Predactor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Predactor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Predict/Predactor_Btb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Predactor_Btb
+INFO: [VRFC 10-2458] undeclared symbol wvalid_i, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Predict/Predactor_Btb.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Predict/Predactor_PUC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Predactor_PUC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Predict/Predactor_Pht.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Predactor_Pht
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/PreifReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PreifReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Preif_IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Preif_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/zzq_design_ip/Queue.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Queue
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Reg_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/Reg_File_Box.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_File_Box
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/SignProduce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignProduce
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/TlbGroup.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TlbGroup
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/WbStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WbStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/axi_wrap/axi_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/ram_wrap/axi_wrap_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/new/cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2458] undeclared symbol search_index_valid, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/new/cache.v:280]
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/new/cache.v:558]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/new/cache_table.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_table
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/new/cache_way.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_way
+INFO: [VRFC 10-2458] undeclared symbol tagv_wea, assumed default net type wire [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/new/cache_way.v:96]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/zzq_design_ip/Diff/diff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diff
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/mycpu_cache_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_cache_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_axi_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/sramaixbridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sramaxibridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/tlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/tools.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_2_4
+INFO: [VRFC 10-311] analyzing module decoder_4_16
+INFO: [VRFC 10-311] analyzing module decoder_5_32
+INFO: [VRFC 10-311] analyzing module decoder_6_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/paper_code3.0/wallace_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_mul
+INFO: [VRFC 10-311] analyzing module booth_4
+INFO: [VRFC 10-311] analyzing module csa4
+INFO: [VRFC 10-311] analyzing module csa5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top

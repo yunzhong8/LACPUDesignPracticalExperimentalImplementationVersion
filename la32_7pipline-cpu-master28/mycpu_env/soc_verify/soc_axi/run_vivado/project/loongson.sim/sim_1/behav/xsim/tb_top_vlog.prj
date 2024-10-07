@@ -1,0 +1,77 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../paper_code3.0" --include "../../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../loongson.ip_user_files/ipstatic/hdl" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll.v" \
+"../../../../../../rtl/xilinx_ip/axi_ram/sim/axi_ram.v" \
+"../../../../../../rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" \
+"../../../../loongson.srcs/sources_1/ip/axi_clock_converter/sim/axi_clock_converter.v" \
+"../../../../Cache/ip/data_bank/sim/data_bank.v" \
+"../../../../Cache/ip/tagv_ram/sim/tagv_ram.v" \
+"../../../../loongson.srcs/sources_1/ip/btb_ram/sim/btb_ram.v" \
+"../../../../loongson.srcs/sources_1/ip/pht_ram/sim/pht_ram.v" \
+"../../../../paper_code3.0/Arith_Logic_Unit.v" \
+"../../../../paper_code3.0/Branch_Unit.v" \
+"../../../../paper_code3.0/CountReg.v" \
+"../../../../paper_code3.0/Csr.v" \
+"../../../../paper_code3.0/Data_Relevant.v" \
+"../../../../paper_code3.0/Div.v" \
+"../../../../paper_code3.0/EX.v" \
+"../../../../paper_code3.0/EX_MEM.v" \
+"../../../../paper_code3.0/Error.v" \
+"../../../../paper_code3.0/ExStage.v" \
+"../../../../paper_code3.0/ID.v" \
+"../../../../paper_code3.0/ID_EX.v" \
+"../../../../paper_code3.0/IF.v" \
+"../../../../paper_code3.0/IF_ID.v" \
+"../../../../paper_code3.0/IdCb.v" \
+"../../../../paper_code3.0/IdSq.v" \
+"../../../../paper_code3.0/IdStage.v" \
+"../../../../paper_code3.0/IfStage.v" \
+"../../../../paper_code3.0/IfTCb.v" \
+"../../../../paper_code3.0/IfTSq.v" \
+"../../../../paper_code3.0/IfTStage.v" \
+"../../../../paper_code3.0/IndetifyInstType.v" \
+"../../../../paper_code3.0/Lanuch.v" \
+"../../../../paper_code3.0/Loog.v" \
+"../../../../paper_code3.0/MEM.v" \
+"../../../../paper_code3.0/MEM_WB.v" \
+"../../../../paper_code3.0/MMCb.v" \
+"../../../../paper_code3.0/MMSq.v" \
+"../../../../paper_code3.0/MMStage.v" \
+"../../../../paper_code3.0/MemStage.v" \
+"../../../../paper_code3.0/Mmu.v" \
+"../../../../paper_code3.0/OpDecoder.v" \
+"../../../../paper_code3.0/PreIF.v" \
+"../../../../Predict/Predactor.v" \
+"../../../../Predict/Predactor_Btb.v" \
+"../../../../Predict/Predactor_Pht.v" \
+"../../../../paper_code3.0/PreifReg.v" \
+"../../../../paper_code3.0/Preif_IF.v" \
+"../../../../zzq_design_ip/Queue.v" \
+"../../../../paper_code3.0/Reg_File.v" \
+"../../../../paper_code3.0/Reg_File_Box.v" \
+"../../../../paper_code3.0/SignProduce.v" \
+"../../../../paper_code3.0/TlbGroup.v" \
+"../../../../paper_code3.0/WB.v" \
+"../../../../paper_code3.0/WbStage.v" \
+"../../../../../../rtl/axi_wrap/axi_wrap.v" \
+"../../../../../../rtl/ram_wrap/axi_wrap_ram.v" \
+"../../../../Cache/new/cache.v" \
+"../../../../Cache/new/cache_table.v" \
+"../../../../Cache/new/cache_way.v" \
+"../../../../../../rtl/CONFREG/confreg.v" \
+"../../../../zzq_design_ip/Diff/diff.v" \
+"../../../../paper_code3.0/mycpu_cache_top.v" \
+"../../../../paper_code3.0/mycpu_top.v" \
+"../../../../../../rtl/soc_lite_top.v" \
+"../../../../paper_code3.0/sramaixbridge.v" \
+"../../../../paper_code3.0/tlb.v" \
+"../../../../paper_code3.0/tools.v" \
+"../../../../paper_code3.0/wallace_mul.v" \
+"../../../../../../testbench/mycpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

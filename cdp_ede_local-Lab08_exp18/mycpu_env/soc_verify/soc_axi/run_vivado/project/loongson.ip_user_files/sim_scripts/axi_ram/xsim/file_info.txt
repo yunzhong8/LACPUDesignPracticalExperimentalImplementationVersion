@@ -1,0 +1,3 @@
+blk_mem_gen_v8_4.v,verilog,xil_defaultlib,../../../../../../rtl/xilinx_ip/axi_ram/simulation/blk_mem_gen_v8_4.v,
+axi_ram.v,verilog,xil_defaultlib,../../../../../../rtl/xilinx_ip/axi_ram/sim/axi_ram.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="tagv_sram_synth_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1684751984">
+  <File Type="VDS-TIMING-PB" Name="tagv_sram_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="tagv_sram_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="tagv_sram.dcp"/>
+  <File Type="REPORTS-TCL" Name="tagv_sram_reports.tcl"/>
+  <File Type="PA-TCL" Name="tagv_sram.tcl"/>
+  <File Type="RDS-RDS" Name="tagv_sram.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="tagv_sram_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="tagv_sram_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="tagv_sram_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/tagv_sram">
+    <File Path="$PPRDIR/myCPU/IP/tagv_sram/tagv_sram.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/myCPU/IP/tagv_sram.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="tagv_sram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/tagv_sram">
+    <File Path="$PPRDIR/myCPU/IP/tagv_sram/tagv_sram.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/myCPU/IP/tagv_sram.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="tagv_sram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

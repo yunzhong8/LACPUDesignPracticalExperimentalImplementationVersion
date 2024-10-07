@@ -1,0 +1,82 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../loongson.ip_user_files/ipstatic/hdl" --include "../../../../../../rtl/myCPU/rtl_code" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll.v" \
+"../../../../../../rtl/xilinx_ip/axi_ram/sim/axi_ram.v" \
+"../../../../../../rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" \
+"../../../../../../rtl/myCPU/IP/axi_clock_converter/sim/axi_clock_converter.v" \
+"../../../../../../rtl/myCPU/IP/data_bank/sim/data_bank.v" \
+"../../../../../../rtl/myCPU/IP/tagv_ram/sim/tagv_ram.v" \
+"../../../../../../rtl/myCPU/IP/btb_ram/sim/btb_ram.v" \
+"../../../../../../rtl/myCPU/IP/pht_ram/sim/pht_ram.v" \
+"../../../../../../rtl/myCPU/rtl_code/Arith_Logic_Unit.v" \
+"../../../../../../rtl/myCPU/rtl_code/Branch_Unit.v" \
+"../../../../../../rtl/myCPU/rtl_code/Cdo.v" \
+"../../../../../../rtl/myCPU/rtl_code/CdoCb.v" \
+"../../../../../../rtl/myCPU/rtl_code/CdoSq.v" \
+"../../../../../../rtl/myCPU/rtl_code/CountReg.v" \
+"../../../../../../rtl/myCPU/rtl_code/Csr.v" \
+"../../../../../../rtl/myCPU/rtl_code/Data_Relevant.v" \
+"../../../../../../rtl/myCPU/rtl_code/Div.v" \
+"../../../../../../rtl/myCPU/rtl_code/EX.v" \
+"../../../../../../rtl/myCPU/rtl_code/EX_MEM.v" \
+"../../../../../../rtl/myCPU/rtl_code/Error.v" \
+"../../../../../../rtl/myCPU/rtl_code/ExStage.v" \
+"../../../../../../rtl/myCPU/rtl_code/ID.v" \
+"../../../../../../rtl/myCPU/rtl_code/ID_EX.v" \
+"../../../../../../rtl/myCPU/rtl_code/IF.v" \
+"../../../../../../rtl/myCPU/rtl_code/IF_ID.v" \
+"../../../../../../rtl/myCPU/rtl_code/IdCb.v" \
+"../../../../../../rtl/myCPU/rtl_code/IdSq.v" \
+"../../../../../../rtl/myCPU/rtl_code/IdStage.v" \
+"../../../../../../rtl/myCPU/rtl_code/IfStage.v" \
+"../../../../../../rtl/myCPU/rtl_code/IfTCb.v" \
+"../../../../../../rtl/myCPU/rtl_code/IfTSq.v" \
+"../../../../../../rtl/myCPU/rtl_code/IfTStage.v" \
+"../../../../../../rtl/myCPU/rtl_code/IndetifyInstType.v" \
+"../../../../../../rtl/myCPU/rtl_code/Lanuch.v" \
+"../../../../../../rtl/myCPU/rtl_code/Loog.v" \
+"../../../../../../rtl/myCPU/rtl_code/MEM.v" \
+"../../../../../../rtl/myCPU/rtl_code/MEM_WB.v" \
+"../../../../../../rtl/myCPU/rtl_code/MMCb.v" \
+"../../../../../../rtl/myCPU/rtl_code/MMSq.v" \
+"../../../../../../rtl/myCPU/rtl_code/MMStage.v" \
+"../../../../../../rtl/myCPU/rtl_code/MemStage.v" \
+"../../../../../../rtl/myCPU/rtl_code/Mmu.v" \
+"../../../../../../rtl/myCPU/rtl_code/OpDecoder.v" \
+"../../../../../../rtl/myCPU/rtl_code/PreIF.v" \
+"../../../../../../rtl/myCPU/rtl_code/Predactor.v" \
+"../../../../../../rtl/myCPU/rtl_code/Predactor_Btb.v" \
+"../../../../../../rtl/myCPU/rtl_code/Predactor_PUC.v" \
+"../../../../../../rtl/myCPU/rtl_code/Predactor_Pht.v" \
+"../../../../../../rtl/myCPU/rtl_code/PreifReg.v" \
+"../../../../../../rtl/myCPU/rtl_code/Preif_IF.v" \
+"../../../../../../rtl/myCPU/rtl_code/Queue.v" \
+"../../../../../../rtl/myCPU/rtl_code/Reg_File.v" \
+"../../../../../../rtl/myCPU/rtl_code/Reg_File_Box.v" \
+"../../../../../../rtl/myCPU/rtl_code/SignProduce.v" \
+"../../../../../../rtl/myCPU/rtl_code/TlbGroup.v" \
+"../../../../../../rtl/myCPU/rtl_code/WB.v" \
+"../../../../../../rtl/myCPU/rtl_code/WbStage.v" \
+"../../../../../../rtl/axi_wrap/axi_wrap.v" \
+"../../../../../../rtl/ram_wrap/axi_wrap_ram.v" \
+"../../../../../../rtl/myCPU/rtl_code/cache.v" \
+"../../../../../../rtl/myCPU/rtl_code/cache_table.v" \
+"../../../../../../rtl/myCPU/rtl_code/cache_way.v" \
+"../../../../../../rtl/CONFREG/confreg.v" \
+"../../../../../../rtl/myCPU/rtl_code/diff.v" \
+"../../../../../../rtl/myCPU/rtl_code/diff_cache.v" \
+"../../../../../../rtl/myCPU/rtl_code/mycpu_cache_top.v" \
+"../../../../../../rtl/myCPU/rtl_code/mycpu_top.v" \
+"../../../../../../rtl/soc_lite_top.v" \
+"../../../../../../rtl/myCPU/rtl_code/sramaixbridge.v" \
+"../../../../../../rtl/myCPU/rtl_code/tlb.v" \
+"../../../../../../rtl/myCPU/rtl_code/tools.v" \
+"../../../../../../rtl/myCPU/rtl_code/wallace_mul.v" \
+"../../../../../../testbench/mycpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

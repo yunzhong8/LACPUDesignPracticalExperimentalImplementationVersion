@@ -1,0 +1,24 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520) [0x7f92bb842520]
+/home/ysyx/Xilinx/Vivado/2019.2/lib/lnx64.o/libverific.so(+0x5e4500) [0x7f92bc9e4500]
+/home/ysyx/Xilinx/Vivado/2019.2/lib/lnx64.o/libverific.so(Verific::hdl_file_sort::QuickParseVerilog(char const*)+0x952) [0x7f92bc9f7fe2]
+/home/ysyx/Xilinx/Vivado/2019.2/lib/lnx64.o/libverific.so(Verific::hdl_file_sort::QuickAnalyze(char const*, char const*)+0x79) [0x7f92bca01de9]
+/home/ysyx/Xilinx/Vivado/2019.2/lib/lnx64.o/libverific.so(Verific::hdl_file_sort::CreateNode(char const*, char const*)+0x37) [0x7f92bca02677]
+/home/ysyx/Xilinx/Vivado/2019.2/lib/lnx64.o/libverific.so(Verific::hdl_file_sort::RegisterFileInternal(char const*, char const*, unsigned int, unsigned int, unsigned int)+0x5a) [0x7f92bca03bea]
+srcscanner() [0x49b510]
+srcscanner() [0x4a37ff]
+srcscanner() [0x4a397e]
+srcscanner() [0x4506ea]
+srcscanner() [0x47c0f8]
+/home/ysyx/Xilinx/Vivado/2019.2/lib/lnx64.o/libtcl8.5.so(TclInvokeStringCommand+0x76) [0x7f92bd62ef66]
+/home/ysyx/Xilinx/Vivado/2019.2/lib/lnx64.o/libtcl8.5.so(+0x334af) [0x7f92bd6334af]
+/home/ysyx/Xilinx/Vivado/2019.2/lib/lnx64.o/libtcl8.5.so(+0x34b38) [0x7f92bd634b38]
+/home/ysyx/Xilinx/Vivado/2019.2/lib/lnx64.o/libtcl8.5.so(Tcl_EvalEx+0x13) [0x7f92bd6350a3]
+/home/ysyx/Xilinx/Vivado/2019.2/lib/lnx64.o/libtcl8.5.so(Tcl_Eval+0x15) [0x7f92bd6350c5]
+srcscanner(main+0x293) [0x43b993]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f92bb829d90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f92bb829e40]
+srcscanner() [0x43e9b7]

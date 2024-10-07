@@ -1,0 +1,1397 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jul 20 23:07:16 2023
+# Process ID: 1104965
+# Current directory: /home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1
+# Command line: vivado -log soc_axi_lite_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source soc_axi_lite_top.tcl -notrace
+# Log file: /home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top.vdi
+# Journal file: /home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source soc_axi_lite_top.tcl -notrace
+Command: link_design -top soc_axi_lite_top -part xc7a200tfbg676-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.dcp' for cell 'pll.clk_pll'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/axi_clock_converter/axi_clock_converter.dcp' for cell 'u_axi_clock_sync'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.dcp' for cell 'u_axi_crossbar_1x2'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_ram/axi_ram.dcp' for cell 'u_axi_ram/ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/btb_ram/btb_ram.dcp' for cell 'u_cpu/mycpu_cache_item/cpu/Predactor_item/Predactor_Btb_item/btb_ram_item'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/pht_ram/pht_ram.dcp' for cell 'u_cpu/mycpu_cache_item/cpu/Predactor_item/Predactor_Pht_item/pht_ram_item'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/ip/data_bank/data_bank.dcp' for cell 'u_cpu/mycpu_cache_item/dcache_item/cache_table_item/cache_way_item0/bank0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/ip/tagv_ram/tagv_ram.dcp' for cell 'u_cpu/mycpu_cache_item/dcache_item/cache_table_item/cache_way_item0/tagv_ram_item'
+Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1748.027 ; gain = 0.000 ; free physical = 3013 ; free virtual = 12105
+INFO: [Netlist 29-17] Analyzing 1912 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Finished Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.xdc:57]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2543.297 ; gain = 595.992 ; free physical = 2449 ; free virtual = 11538
+Finished Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'num_data[0]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[1]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[2]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[3]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[4]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[5]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[6]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[7]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[8]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[9]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[10]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[11]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[12]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[13]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[14]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[15]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[16]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[17]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[18]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[19]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[20]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[21]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[22]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[23]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[24]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[25]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[26]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[27]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[28]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[29]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[30]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[31]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[*]'. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc]
+Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/axi_clock_converter/axi_clock_converter_clocks.xdc] for cell 'u_axi_clock_sync/inst'
+Finished Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/axi_clock_converter/axi_clock_converter_clocks.xdc] for cell 'u_axi_clock_sync/inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2549.234 ; gain = 0.000 ; free physical = 2473 ; free virtual = 11561
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 42 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 38 instances
+
+17 Infos, 34 Warnings, 33 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 2549.234 ; gain = 1103.402 ; free physical = 2473 ; free virtual = 11561
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2613.266 ; gain = 64.031 ; free physical = 2441 ; free virtual = 11533
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1ae478b25
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.68 . Memory (MB): peak = 2613.266 ; gain = 0.000 ; free physical = 2431 ; free virtual = 11520
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 256 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1f57d755d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2686.250 ; gain = 1.000 ; free physical = 2305 ; free virtual = 11394
+INFO: [Opt 31-389] Phase Retarget created 18 cells and removed 56 cells
+INFO: [Opt 31-1021] In phase Retarget, 31 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1216d07a8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2686.250 ; gain = 1.000 ; free physical = 2305 ; free virtual = 11394
+INFO: [Opt 31-389] Phase Constant propagation created 5 cells and removed 34 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 30 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1ccbf70d5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2686.250 ; gain = 1.000 ; free physical = 2302 ; free virtual = 11391
+INFO: [Opt 31-389] Phase Sweep created 20 cells and removed 180 cells
+INFO: [Opt 31-1021] In phase Sweep, 150 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 1ccbf70d5
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2686.250 ; gain = 1.000 ; free physical = 2302 ; free virtual = 11391
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1ccbf70d5
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2686.250 ; gain = 1.000 ; free physical = 2302 ; free virtual = 11391
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1754af6e4
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2686.250 ; gain = 1.000 ; free physical = 2302 ; free virtual = 11391
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 46 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              18  |              56  |                                             31  |
+|  Constant propagation         |               5  |              34  |                                             30  |
+|  Sweep                        |              20  |             180  |                                            150  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             46  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2686.250 ; gain = 0.000 ; free physical = 2302 ; free virtual = 11391
+Ending Logic Optimization Task | Checksum: 116f53933
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2686.250 ; gain = 1.000 ; free physical = 2302 ; free virtual = 11391
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.117 | TNS=-297.597 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 278 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 32 newly gated: 2 Total Ports: 556
+Ending PowerOpt Patch Enables Task | Checksum: 1f6a4aecf
+
+Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:00.77 . Memory (MB): peak = 3376.918 ; gain = 0.000 ; free physical = 2191 ; free virtual = 11280
+Ending Power Optimization Task | Checksum: 1f6a4aecf
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:33 . Memory (MB): peak = 3376.918 ; gain = 690.668 ; free physical = 2225 ; free virtual = 11314
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1f6a4aecf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3376.918 ; gain = 0.000 ; free physical = 2225 ; free virtual = 11314
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3376.918 ; gain = 0.000 ; free physical = 2225 ; free virtual = 11314
+Ending Netlist Obfuscation Task | Checksum: 15b96253c
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3376.918 ; gain = 0.000 ; free physical = 2225 ; free virtual = 11314
+INFO: [Common 17-83] Releasing license: Implementation
+47 Infos, 34 Warnings, 33 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:00 ; elapsed = 00:00:41 . Memory (MB): peak = 3376.918 ; gain = 827.684 ; free physical = 2225 ; free virtual = 11314
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3376.918 ; gain = 0.000 ; free physical = 2219 ; free virtual = 11308
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3376.918 ; gain = 0.000 ; free physical = 2217 ; free virtual = 11307
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3376.918 ; gain = 0.000 ; free physical = 2210 ; free virtual = 11307
+INFO: [runtcl-4] Executing : report_drc -file soc_axi_lite_top_drc_opted.rpt -pb soc_axi_lite_top_drc_opted.pb -rpx soc_axi_lite_top_drc_opted.rpx
+Command: report_drc -file soc_axi_lite_top_drc_opted.rpt -pb soc_axi_lite_top_drc_opted.pb -rpx soc_axi_lite_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_2) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[100].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[100].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[100].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[101].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[101].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[101].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[102].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[102].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[102].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[103].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[103].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[103].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[104].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[104].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[104].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_10) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[105].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[105].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[105].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[106].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[106].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[106].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[107].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[107].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[107].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[108].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[108].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[108].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[109].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[109].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[109].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[110].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[110].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[110].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[111].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[111].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[111].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[112].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[112].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[112].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_26) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[113].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[113].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[113].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[114].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[114].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[114].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[115].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[115].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[115].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[116].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[116].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[116].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[117].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[117].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[117].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2183 ; free virtual = 11280
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 109172783
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2183 ; free virtual = 11280
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2183 ; free virtual = 11280
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1db329069
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2181 ; free virtual = 11277
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 24fd84428
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2156 ; free virtual = 11252
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 24fd84428
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2156 ; free virtual = 11252
+Phase 1 Placer Initialization | Checksum: 24fd84428
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2156 ; free virtual = 11252
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1cc1d6e17
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2133 ; free virtual = 11229
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 461 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 583 nets or cells. Created 405 new cells, deleted 178 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_25 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__26 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_20 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__36 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_24 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__17 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_27 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__28 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_5 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__13 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_34 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__27 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_22 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__38 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_19 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__35 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_24 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__46 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_24 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__25 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_19 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__4 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_1 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__69 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_10 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__70 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_20 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__5 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_2 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__10 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_22 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__15 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_23 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__24 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[14]_2 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__41 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_18 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__34 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_32 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__25 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_3 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__11 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_4 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__12 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[14]_3 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__43 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_17 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__2 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_4 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__72 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_22 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__23 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_13 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__21 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_0 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__8 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_13 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__5 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_15 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__31 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_23 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__42 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_26 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__19 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_26 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__27 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_18 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__11 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_15 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__8 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_21 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__37 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_23 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__16 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_29 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__22 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_3 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__71 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_28 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__29 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/ram_enb could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_1 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__9 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[14]_0 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__39 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_16 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__1 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_29 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__30 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_13 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__73 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_15 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__0 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr_18_sn_1 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__59 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[14]_4 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__44 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_10 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__18 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_2 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__62 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_21 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__6 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_28 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__21 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.bmg_address_r_reg[13]_1[7] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_17__0 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_57 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__50 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_9 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__69 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_37 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__30 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.bmg_address_r_reg[13]_1[1] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_23__0 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_44 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__37 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_51 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__44 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.bmg_address_r_reg[13]_1[6] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_18__0 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[14]_5 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__45 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_14 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__74 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_7 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_60 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__53 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_12 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__72 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_8 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__16 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_16 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__32 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.bmg_address_r_reg[13]_8[9] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_15__7 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_11 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__3 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__67 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.bmg_address_r_reg[13]_7[6] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_18__6 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.bmg_address_r_reg[13]_12[1] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_23__11 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__7 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_43 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__36 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_18 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__3 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_11 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__71 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.bmg_address_r_reg[13]_12[7] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_17__11 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.bmg_address_r_reg[13]_11[4] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_20__10 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.bmg_address_r_reg[13]_11[10] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_14__10 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.bmg_address_r_reg[13]_12[10] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_14__11 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_20 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__13 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/ram_ena could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__7 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.bmg_address_r_reg[13]_12[11] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_13__11 could not be replicated
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2037 ; free virtual = 11162
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          405  |            178  |                   583  |           0  |           1  |  00:00:02  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          405  |            178  |                   583  |           0  |           8  |  00:00:03  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1663060b4
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:00:53 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2032 ; free virtual = 11160
+Phase 2.2 Global Placement Core | Checksum: 2853d03bc
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:02 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2048 ; free virtual = 11175
+Phase 2 Global Placement | Checksum: 2853d03bc
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:02 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2058 ; free virtual = 11185
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1bf826db6
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:01:07 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2071 ; free virtual = 11198
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 14effaf11
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:01:15 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2061 ; free virtual = 11196
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 239285a61
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:01:17 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2065 ; free virtual = 11193
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1c0f94960
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:01:17 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2065 ; free virtual = 11193
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 230531526
+
+Time (s): cpu = 00:03:52 ; elapsed = 00:01:37 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2012 ; free virtual = 11161
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1a1eda231
+
+Time (s): cpu = 00:04:15 ; elapsed = 00:01:57 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2004 ; free virtual = 11131
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: dba32b55
+
+Time (s): cpu = 00:04:16 ; elapsed = 00:01:58 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2004 ; free virtual = 11131
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 13aed2a53
+
+Time (s): cpu = 00:04:16 ; elapsed = 00:01:58 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2004 ; free virtual = 11131
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1d918bbc9
+
+Time (s): cpu = 00:04:35 ; elapsed = 00:02:08 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1995 ; free virtual = 11127
+Phase 3 Detail Placement | Checksum: 1d918bbc9
+
+Time (s): cpu = 00:04:35 ; elapsed = 00:02:08 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1995 ; free virtual = 11127
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1f327cdd8
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net u_cpu/mycpu_cache_item/cpu/RFI/CsrI/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net u_cpu/mycpu_cache_item/cpu/WbStageI/MEMWBI/cpu_resetn_reg_rep__1_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 2, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1f327cdd8
+
+Time (s): cpu = 00:04:51 ; elapsed = 00:02:12 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2004 ; free virtual = 11132
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.665. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: fc23bcd0
+
+Time (s): cpu = 00:06:57 ; elapsed = 00:03:38 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1976 ; free virtual = 11104
+Phase 4.1 Post Commit Optimization | Checksum: fc23bcd0
+
+Time (s): cpu = 00:06:57 ; elapsed = 00:03:38 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1976 ; free virtual = 11104
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: fc23bcd0
+
+Time (s): cpu = 00:06:59 ; elapsed = 00:03:39 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1986 ; free virtual = 11114
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: fc23bcd0
+
+Time (s): cpu = 00:06:59 ; elapsed = 00:03:39 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1986 ; free virtual = 11114
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1986 ; free virtual = 11114
+Phase 4.4 Final Placement Cleanup | Checksum: c541c945
+
+Time (s): cpu = 00:06:59 ; elapsed = 00:03:40 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1987 ; free virtual = 11113
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: c541c945
+
+Time (s): cpu = 00:07:00 ; elapsed = 00:03:40 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1987 ; free virtual = 11113
+Ending Placer Task | Checksum: c14db838
+
+Time (s): cpu = 00:07:00 ; elapsed = 00:03:40 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1987 ; free virtual = 11113
+INFO: [Common 17-83] Releasing license: Implementation
+169 Infos, 55 Warnings, 33 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:07:03 ; elapsed = 00:03:43 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2039 ; free virtual = 11165
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2039 ; free virtual = 11165
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:04 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1985 ; free virtual = 11149
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2026 ; free virtual = 11163
+INFO: [runtcl-4] Executing : report_io -file soc_axi_lite_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.50 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2010 ; free virtual = 11149
+INFO: [runtcl-4] Executing : report_utilization -file soc_axi_lite_top_utilization_placed.rpt -pb soc_axi_lite_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file soc_axi_lite_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 2023 ; free virtual = 11163
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1992 ; free virtual = 11128
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.665 | TNS=-116.325 |
+Phase 1 Physical Synthesis Initialization | Checksum: bad628b9
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:09 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1980 ; free virtual = 11118
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.665 | TNS=-116.325 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: bad628b9
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:09 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1980 ; free virtual = 11118
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.665 | TNS=-116.325 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail[0].  Re-placed instance u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[0]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.662 | TNS=-116.322 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail[0].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[0]
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/dcache_item/search_buffer_reg_n_0_[130].  Re-placed instance u_cpu/mycpu_cache_item/dcache_item/search_buffer_reg[130]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/dcache_item/search_buffer_reg_n_0_[130]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.625 | TNS=-99.864 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/dcache_item/search_buffer_reg_n_0_[129].  Did not re-place instance u_cpu/mycpu_cache_item/dcache_item/search_buffer_reg[129]
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/dcache_item/search_buffer_reg_n_0_[129]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/E[0].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus[471]_i_1
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/E[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[136]_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus[331]_i_4
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/E[0]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus[471]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[136]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.600 | TNS=-76.344 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[78].  Re-placed instance u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/to_now_obus_reg[111]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[78]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.600 | TNS=-75.818 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[83].  Re-placed instance u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/to_now_obus_reg[116]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[83]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.600 | TNS=-75.574 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[93].  Re-placed instance u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/to_now_obus_reg[126]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[93]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.537 | TNS=-75.330 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/dcache_item/data_cs[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[46]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[46]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.525 | TNS=-75.080 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[176].  Re-placed instance u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/to_now_obus_reg[251]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[176]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.525 | TNS=-74.818 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[185].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/to_now_obus_reg[260]
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[185]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[136]_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus[331]_i_4
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/line1_now_valid_o_reg_0[0]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus[331]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[136]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.510 | TNS=-13.022 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[95]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[142]_rep__0_n_0. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[142]_rep__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.508 | TNS=-12.781 |
+INFO: [Physopt 32-81] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[145]_rep__0_0. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[145]_rep__0_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.502 | TNS=-12.469 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[204]_rep__0_0.  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[204]_rep__0
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[204]_rep__0_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.500 | TNS=-12.467 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[204]_rep__0_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[204]_rep__0
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[204]_rep__0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[66] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[66].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[168]
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[66]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[63].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[346]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_6. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[204]_rep__0_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[63]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.498 | TNS=-12.206 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[100]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[87].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[189]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[87]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.494 | TNS=-12.434 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[61].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[344]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[61]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.490 | TNS=-12.072 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[56].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[339]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[56]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.478 | TNS=-11.470 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[71].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[173]
+INFO: [Physopt 32-81] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[71]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[71]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.477 | TNS=-11.469 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[71].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[173]
+INFO: [Physopt 32-571] Net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[71] was not replicated.
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[71]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/dcache_item/r_cs_reg[1]_3.  Did not re-place instance u_cpu/mycpu_cache_item/dcache_item/r_cs[0]_i_4
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/r_cs[0]_i_1_n_0. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/r_cs[0]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/dcache_item/r_cs_reg[1]_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.471 | TNS=-10.991 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[88]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[81] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[81].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[183]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[81]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.467 | TNS=-11.231 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[54].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[156]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[54]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.446 | TNS=-10.875 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[204]_rep_0.  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[204]_rep
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[204]_rep_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.415 | TNS=-10.429 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[138].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[294]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[138]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.414 | TNS=-10.014 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[81].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[183]
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[81]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[42].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[325]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[42]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.401 | TNS=-9.865 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[49].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[332]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[49]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.390 | TNS=-9.656 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[157].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[313]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[157]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.369 | TNS=-9.265 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[75]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[52].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[154]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[52]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.344 | TNS=-9.683 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/icache_item/inst_cs[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/icache_item/r_cs_reg[0]_1.  Did not re-place instance u_cpu/mycpu_cache_item/icache_item/r_cs[0]_i_4__0
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/r_cs[0]_i_1__0_n_0. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/r_cs[0]_i_1__0_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/icache_item/r_cs_reg[0]_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.336 | TNS=-9.338 |
+INFO: [Physopt 32-572] Net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[52] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[52].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[154]
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[52]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/to_now_obus_reg[68]_0.  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[319]_i_3
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/to_now_obus_reg[68]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.330 | TNS=-9.027 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[93]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[54].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[337]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[54]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.311 | TNS=-8.871 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[184].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[340]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[184]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.309 | TNS=-8.560 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[61].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[344]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[138]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[202]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[61]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.304 | TNS=-8.285 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[13].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[296]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.303 | TNS=-8.058 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[187].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[343]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[187]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.299 | TNS=-7.754 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[65]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[167]_i_2_n_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[167]_i_2
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[103]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[167]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[167]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.294 | TNS=-7.455 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[188].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[344]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[188]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.279 | TNS=-7.241 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[94]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[55].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[338]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[132]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[196]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[55]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.277 | TNS=-6.962 |
+INFO: [Physopt 32-663] Processed net u_cpu/sramaxibridge_item/FSM_onehot_w_cs_reg[2]_0[0].  Re-placed instance u_cpu/sramaxibridge_item/FSM_onehot_w_cs_reg[0]
+INFO: [Physopt 32-735] Processed net u_cpu/sramaxibridge_item/FSM_onehot_w_cs_reg[2]_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.276 | TNS=-6.684 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[96]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[57].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[340]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[134]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[198]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[57]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.266 | TNS=-6.408 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[13].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[296]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[90]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[154]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.265 | TNS=-6.142 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[42].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[325]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[119]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[183]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[42]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.257 | TNS=-5.876 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[54].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[337]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[131]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[195]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[54]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.249 | TNS=-5.619 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[186].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[342]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[186]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.248 | TNS=-5.370 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[179].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[335]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[179]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.247 | TNS=-5.122 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[68]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[29].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[312]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[106]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[170]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[29]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.234 | TNS=-4.874 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[346]_i_5_n_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[346]_i_5
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_6. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[204]_rep__0_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[346]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.234 | TNS=-4.646 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[69]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[30].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[313]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[30]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.232 | TNS=-4.512 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[49].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[332]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[126]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[190]_i_1__1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[49]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.229 | TNS=-4.280 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[156].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[312]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[156]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.203 | TNS=-4.140 |
+INFO: [Physopt 32-735] Processed net u_cpu/sramaxibridge_item/FSM_onehot_r_cs[0]_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.193 | TNS=-3.941 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[87].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[189]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[87]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.189 | TNS=-3.810 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[104]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[168]_i_3_n_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[168]_i_3
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[104]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[168]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[168]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.188 | TNS=-3.620 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[176].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[332]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[176]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.187 | TNS=-3.432 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[185].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[341]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[185]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.184 | TNS=-3.245 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus[331]_i_7__0_n_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus[331]_i_7__0
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/E[0]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus[471]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus[331]_i_7__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.180 | TNS=-3.202 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[91]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[52].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[335]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[129]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[193]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[52]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.172 | TNS=-3.022 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[50].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[152]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[50]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.165 | TNS=-2.991 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[181].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[337]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[181]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.158 | TNS=-2.825 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[70]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[172]_i_5_n_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[172]_i_5
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[108]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[172]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[172]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.158 | TNS=-2.667 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[136]_0_repN.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus[331]_i_4_comp
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/E[0]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus[471]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[136]_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.157 | TNS=-2.509 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[183].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[339]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[183]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.148 | TNS=-2.351 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[178].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[334]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[178]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.141 | TNS=-2.203 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[50].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[152]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[50]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.138 | TNS=-2.186 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[48]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[9].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[292]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[86]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[150]_i_1__0_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.138 | TNS=-2.048 |
+INFO: [Physopt 32-702] Processed net u_axi_crossbar_1x2/inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/r.r_pipe/st_mr_rmesg[64]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[227].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_axi_ram/m_axi_rdata[26].  Did not re-place instance u_axi_ram/u_axi_crossbar_1x2_i_22
+INFO: [Physopt 32-572] Net u_axi_ram/m_axi_rdata[26] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net u_axi_ram/m_axi_rdata[26]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/has_mux_b.B/s_axi_rdata[26].  Did not re-place instance u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/has_mux_b.B/s_axi_rdata[26]_INST_0
+INFO: [Physopt 32-710] Processed net u_axi_ram/m_axi_rdata[26]. Critical path length was reduced through logic transformation on cell u_axi_ram/u_axi_crossbar_1x2_i_22_comp.
+INFO: [Physopt 32-735] Processed net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/has_mux_b.B/s_axi_rdata[26]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.132 | TNS=-1.910 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[99]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[60].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[343]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[60]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.124 | TNS=-1.873 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[50].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[152]
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[50]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[11].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[294]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[88]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[152]_i_1__1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.115 | TNS=-1.749 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[168].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[324]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[168]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.111 | TNS=-1.634 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[54].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[156]
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[54]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[15].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[298]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[92]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[156]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.100 | TNS=-1.522 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[30].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[313]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[107]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[171]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[30]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.094 | TNS=-1.422 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[92]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[53].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[336]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[53]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.093 | TNS=-1.355 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[46]_repN.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[148]_replica
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[46]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[7].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[290]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[84]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[148]_i_1__0_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.089 | TNS=-1.262 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[156].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[312]
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[156]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[312]_i_3_n_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[312]_i_3
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[29]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[312]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[312]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.088 | TNS=-1.184 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[56].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[339]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[133]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[197]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[56]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.086 | TNS=-1.096 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[188].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[344]
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[188]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[344]_i_3_n_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[344]_i_3
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[61]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[344]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[344]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.084 | TNS=-1.003 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/IfTStage_item/IfTSq_item/to_now_obus_reg[141]_0[102].  Re-placed instance u_cpu/mycpu_cache_item/cpu/IfTStage_item/IfTSq_item/to_now_obus_reg[140]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/IfTStage_item/IfTSq_item/to_now_obus_reg[141]_0[102]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.079 | TNS=-0.918 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[56]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[17].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[300]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[17]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.079 | TNS=-0.791 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[80]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[41].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[324]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[118]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[182]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[41]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.075 | TNS=-0.711 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[182].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[338]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[182]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.072 | TNS=-0.636 |
+INFO: [Physopt 32-702] Processed net u_axi_crossbar_1x2/inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/r.r_pipe/Q[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[229].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_axi_ram/m_axi_rdata[24].  Did not re-place instance u_axi_ram/u_axi_crossbar_1x2_i_24
+INFO: [Physopt 32-572] Net u_axi_ram/m_axi_rdata[24] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net u_axi_ram/m_axi_rdata[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/has_mux_b.B/s_axi_rdata[24].  Did not re-place instance u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/has_mux_b.B/s_axi_rdata[24]_INST_0
+INFO: [Physopt 32-710] Processed net u_axi_ram/m_axi_rdata[24]. Critical path length was reduced through logic transformation on cell u_axi_ram/u_axi_crossbar_1x2_i_24_comp.
+INFO: [Physopt 32-735] Processed net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/has_mux_b.B/s_axi_rdata[24]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.066 | TNS=-0.564 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[98]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[59].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[342]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[136]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[200]_i_1__0_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[59]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.062 | TNS=-0.498 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[87].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[189]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[87]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.061 | TNS=-0.436 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[101]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[62].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[345]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[139]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[203]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[62]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.060 | TNS=-0.374 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[60].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[343]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[60]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.053 | TNS=-0.327 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[82]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[43].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[326]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[43]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.048 | TNS=-0.279 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[60].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[343]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[137]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[201]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[60]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.041 | TNS=-0.231 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[97]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[58].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[341]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[135]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[199]_i_1__0_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[58]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.039 | TNS=-0.189 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/MemStageI/EXMEMI/pre_to_bus[295]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[204]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/MMStage_item/MMSq_item/Q[204]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.033 | TNS=-0.124 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[344]_i_3_n_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[344]_i_3
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[138]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[202]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[344]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.027 | TNS=-0.090 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[180].  Re-placed instance u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/to_now_obus_reg[336]
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[180]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.025 | TNS=-0.063 |
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/to_now_obus_reg[68]_0.  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[319]_i_3
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[113]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[177]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/to_now_obus_reg[68]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.015 | TNS=-0.038 |
+INFO: [Physopt 32-702] Processed net u_axi_crossbar_1x2/inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/r.r_pipe/Q[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[82].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_axi_ram/m_axi_rdata[8].  Did not re-place instance u_axi_ram/u_axi_crossbar_1x2_i_40
+INFO: [Physopt 32-572] Net u_axi_ram/m_axi_rdata[8] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net u_axi_ram/m_axi_rdata[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/has_mux_b.B/s_axi_rdata[8].  Did not re-place instance u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/has_mux_b.B/s_axi_rdata[8]_INST_0
+INFO: [Physopt 32-710] Processed net u_axi_ram/m_axi_rdata[8]. Critical path length was reduced through logic transformation on cell u_axi_ram/u_axi_crossbar_1x2_i_40_comp.
+INFO: [Physopt 32-735] Processed net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/has_mux_b.B/s_axi_rdata[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.013 | TNS=-0.023 |
+INFO: [Physopt 32-702] Processed net u_cpu/mycpu_cache_item/cpu/ExStageI/IDEXI/Q[67]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[28].  Did not re-place instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[311]_i_1
+INFO: [Physopt 32-710] Processed net u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/queue_tail_reg[2]_rep__0_2[105]. Critical path length was reduced through logic transformation on cell u_cpu/mycpu_cache_item/cpu/LanuchI/IFIDI/to_now_obus[169]_i_1_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[28]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.005 | TNS=-0.010 |
+INFO: [Physopt 32-663] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[43].  Re-placed instance u_cpu/mycpu_cache_item/cpu/DRI/i_/to_now_obus[326]_i_1
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/cpu/DRI/D[43]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.004 | TNS=-0.004 |
+INFO: [Physopt 32-702] Processed net u_cpu/sramaxibridge_item/FSM_onehot_r_cs[0]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net u_cpu/mycpu_cache_item/dcache_item/cache_table_item/cache_way_item1/uncache_en_buffer_reg.  Did not re-place instance u_cpu/mycpu_cache_item/dcache_item/cache_table_item/cache_way_item1/FSM_onehot_w_cs[1]_i_2
+INFO: [Physopt 32-710] Processed net u_cpu/sramaxibridge_item/FSM_onehot_r_cs[0]_i_2_n_0. Critical path length was reduced through logic transformation on cell u_cpu/sramaxibridge_item/FSM_onehot_r_cs[0]_i_2_comp.
+INFO: [Physopt 32-735] Processed net u_cpu/mycpu_cache_item/dcache_item/cache_table_item/cache_way_item1/uncache_en_buffer_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.007 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.007 | TNS=0.000 |
+Phase 3 Critical Path Optimization | Checksum: bad628b9
+
+Time (s): cpu = 00:05:09 ; elapsed = 00:01:17 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1975 ; free virtual = 11114
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.007 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.007 | TNS=0.000 |
+INFO: [Common 17-14] Message 'Physopt 32-619' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 4 Critical Path Optimization | Checksum: bad628b9
+
+Time (s): cpu = 00:05:09 ; elapsed = 00:01:17 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1975 ; free virtual = 11114
+Netlist sorting complete. Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.20 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1976 ; free virtual = 11113
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.007 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.672  |        116.325  |            8  |              0  |                    94  |           0  |           2  |  00:01:07  |
+|  Total          |          0.672  |        116.325  |            8  |              0  |                    94  |           0  |           3  |  00:01:07  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1976 ; free virtual = 11113
+Ending Physical Synthesis Task | Checksum: bad628b9
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:01:17 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1976 ; free virtual = 11113
+INFO: [Common 17-83] Releasing license: Implementation
+584 Infos, 55 Warnings, 33 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:05:59 ; elapsed = 00:01:27 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1994 ; free virtual = 11130
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1994 ; free virtual = 11130
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1946 ; free virtual = 11122
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1985 ; free virtual = 11132
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 6d18e344 ConstDB: 0 ShapeSum: b522d81b RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 6ee0578b
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:37 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1752 ; free virtual = 10896
+Post Restoration Checksum: NetGraph: 4d245316 NumContArr: 21bc0475 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 6ee0578b
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:38 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1754 ; free virtual = 10898
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 6ee0578b
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:38 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1711 ; free virtual = 10855
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 6ee0578b
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:38 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1711 ; free virtual = 10855
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 10bf67422
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:55 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1688 ; free virtual = 10836
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.005  | TNS=0.000  | WHS=-0.174 | THS=-97.633|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: abbd4f88
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:02:03 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1669 ; free virtual = 10817
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.005  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: df2e8b22
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:02:03 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1669 ; free virtual = 10817
+Phase 2 Router Initialization | Checksum: e80d50e5
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:02:03 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1668 ; free virtual = 10816
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00172082 %
+  Global Horizontal Routing Utilization  = 0.0042961 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 23361
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 23356
+  Number of Partially Routed Nets     = 5
+  Number of Node Overlaps             = 6
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1af116dca
+
+Time (s): cpu = 00:09:47 ; elapsed = 00:03:16 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1644 ; free virtual = 10791
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 9575
+ Number of Nodes with overlaps = 3727
+ Number of Nodes with overlaps = 1779
+ Number of Nodes with overlaps = 693
+ Number of Nodes with overlaps = 245
+ Number of Nodes with overlaps = 108
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.635 | TNS=-25.937| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: df01a482
+
+Time (s): cpu = 00:25:04 ; elapsed = 00:07:41 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1600 ; free virtual = 10748
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2375
+ Number of Nodes with overlaps = 804
+ Number of Nodes with overlaps = 379
+ Number of Nodes with overlaps = 133
+ Number of Nodes with overlaps = 75
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 33
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.071  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: cc9ddd56
+
+Time (s): cpu = 00:28:53 ; elapsed = 00:09:17 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1592 ; free virtual = 10738
+Phase 4 Rip-up And Reroute | Checksum: cc9ddd56
+
+Time (s): cpu = 00:28:53 ; elapsed = 00:09:18 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1592 ; free virtual = 10738
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 14725e20a
+
+Time (s): cpu = 00:29:04 ; elapsed = 00:09:20 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1589 ; free virtual = 10739
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.071  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: aab0886f
+
+Time (s): cpu = 00:29:04 ; elapsed = 00:09:20 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1589 ; free virtual = 10739
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: aab0886f
+
+Time (s): cpu = 00:29:04 ; elapsed = 00:09:20 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1589 ; free virtual = 10737
+Phase 5 Delay and Skew Optimization | Checksum: aab0886f
+
+Time (s): cpu = 00:29:04 ; elapsed = 00:09:21 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1588 ; free virtual = 10737
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: d57cbd8e
+
+Time (s): cpu = 00:29:17 ; elapsed = 00:09:24 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1589 ; free virtual = 10735
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.071  | TNS=0.000  | WHS=0.051  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 117fc3b83
+
+Time (s): cpu = 00:29:17 ; elapsed = 00:09:24 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1589 ; free virtual = 10735
+Phase 6 Post Hold Fix | Checksum: 117fc3b83
+
+Time (s): cpu = 00:29:17 ; elapsed = 00:09:24 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1589 ; free virtual = 10735
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 6.36475 %
+  Global Horizontal Routing Utilization  = 7.54484 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 176f6fc5e
+
+Time (s): cpu = 00:29:18 ; elapsed = 00:09:25 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1589 ; free virtual = 10735
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 176f6fc5e
+
+Time (s): cpu = 00:29:18 ; elapsed = 00:09:25 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1589 ; free virtual = 10735
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 22a4a3f06
+
+Time (s): cpu = 00:29:23 ; elapsed = 00:09:30 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1588 ; free virtual = 10736
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.071  | TNS=0.000  | WHS=0.051  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 22a4a3f06
+
+Time (s): cpu = 00:29:23 ; elapsed = 00:09:30 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1579 ; free virtual = 10737
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:29:23 ; elapsed = 00:09:30 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1643 ; free virtual = 10802
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+604 Infos, 55 Warnings, 33 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:29:35 ; elapsed = 00:09:37 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1643 ; free virtual = 10802
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1643 ; free virtual = 10802
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1563 ; free virtual = 10759
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 3464.961 ; gain = 0.000 ; free physical = 1448 ; free virtual = 10611
+INFO: [runtcl-4] Executing : report_drc -file soc_axi_lite_top_drc_routed.rpt -pb soc_axi_lite_top_drc_routed.pb -rpx soc_axi_lite_top_drc_routed.rpx
+Command: report_drc -file soc_axi_lite_top_drc_routed.rpt -pb soc_axi_lite_top_drc_routed.pb -rpx soc_axi_lite_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:27 ; elapsed = 00:00:09 . Memory (MB): peak = 3500.961 ; gain = 36.000 ; free physical = 1342 ; free virtual = 10505
+INFO: [runtcl-4] Executing : report_methodology -file soc_axi_lite_top_methodology_drc_routed.rpt -pb soc_axi_lite_top_methodology_drc_routed.pb -rpx soc_axi_lite_top_methodology_drc_routed.rpx
+Command: report_methodology -file soc_axi_lite_top_methodology_drc_routed.rpt -pb soc_axi_lite_top_methodology_drc_routed.pb -rpx soc_axi_lite_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/ysyx/weihui/la32_7pipline-cpu-master28/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:46 ; elapsed = 00:00:27 . Memory (MB): peak = 3500.961 ; gain = 0.000 ; free physical = 1090 ; free virtual = 10274
+INFO: [runtcl-4] Executing : report_power -file soc_axi_lite_top_power_routed.rpt -pb soc_axi_lite_top_power_summary_routed.pb -rpx soc_axi_lite_top_power_routed.rpx
+Command: report_power -file soc_axi_lite_top_power_routed.rpt -pb soc_axi_lite_top_power_summary_routed.pb -rpx soc_axi_lite_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+616 Infos, 55 Warnings, 33 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:54 ; elapsed = 00:00:17 . Memory (MB): peak = 3500.961 ; gain = 0.000 ; free physical = 1102 ; free virtual = 10294
+INFO: [runtcl-4] Executing : report_route_status -file soc_axi_lite_top_route_status.rpt -pb soc_axi_lite_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file soc_axi_lite_top_timing_summary_routed.rpt -pb soc_axi_lite_top_timing_summary_routed.pb -rpx soc_axi_lite_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file soc_axi_lite_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file soc_axi_lite_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file soc_axi_lite_top_bus_skew_routed.rpt -pb soc_axi_lite_top_bus_skew_routed.pb -rpx soc_axi_lite_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 20 23:26:30 2023...

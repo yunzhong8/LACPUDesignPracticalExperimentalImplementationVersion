@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov 22 14:01:01 2022
+# Process ID: 14266
+# Current directory: /home/chenji/release_20221122/cdp_ede_local/mycpu_env/gettrace/gettrace.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/chenji/release_20221122/cdp_ede_local/mycpu_env/gettrace/gettrace.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/chenji/release_20221122/cdp_ede_local/mycpu_env/gettrace/gettrace.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/chenji/release_20221122/cdp_ede_local/mycpu_env/gettrace/gettrace.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/chenji/release_20221122/cdp_ede_local/mycpu_env/gettrace/gettrace.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/chenji/release_20221122/cdp_ede_local/mycpu_env/gettrace/gettrace.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 22 14:01:06 2022. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:05 . Memory (MB): peak = 373.879 ; gain = 0.000 ; free physical = 3646 ; free virtual = 9844
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 22 14:01:06 2022...

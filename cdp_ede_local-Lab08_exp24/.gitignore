@@ -1,0 +1,3 @@
+git rm --cached -r ./mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.cache
+git rm --cached -r ./mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.sim
+

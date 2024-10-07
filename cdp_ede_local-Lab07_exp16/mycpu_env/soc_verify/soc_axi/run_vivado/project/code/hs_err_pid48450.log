@@ -1,0 +1,8 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/home/zzq/pan_softwave/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb6aadb) [0x7efbff36aadb]
+/home/zzq/pan_softwave/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(JVM_handle_linux_signal+0xbb) [0x7efbff36fe1b]
+/home/zzq/pan_softwave/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb647b8) [0x7efbff3647b8]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520) [0x7efc53042520]

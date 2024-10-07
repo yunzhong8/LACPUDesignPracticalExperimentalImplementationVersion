@@ -1,0 +1,2 @@
+data_bank.v,verilog,xil_defaultlib,../../../../Cache/ip/data_bank/sim/data_bank.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

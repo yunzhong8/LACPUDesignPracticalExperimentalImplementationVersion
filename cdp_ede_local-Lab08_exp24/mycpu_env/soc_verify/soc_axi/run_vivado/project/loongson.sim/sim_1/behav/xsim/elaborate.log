@@ -1,0 +1,21 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/ysyx/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 45bcd68cc1f14904bfbc84fc1baeaef3 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_20 -L fifo_generator_v13_2_5 -L axi_data_fifo_v2_1_19 -L axi_crossbar_v2_1_21 -L axi_clock_converter_v2_1_19 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'arlen' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v:328]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'awlen' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v:346]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'branch_flush_i' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/myCPU/rtl_code/IfTStage.v:161]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'next_to_ibus' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/myCPU/rtl_code/Loog.v:586]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'branch_flush_i' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/myCPU/rtl_code/MemStage.v:129]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'm_arlen' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v:382]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'm_awlen' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v:400]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 's_arlen' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v:426]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 's_awlen' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v:444]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'arlen' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v:695]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'awlen' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v:711]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 46 for port 'mmu_to_ibus' [/home/ysyx/weihui/cdp_ede_local-Lab08_exp24/mycpu_env/soc_verify/soc_axi/rtl/myCPU/rtl_code/MMStage.v:132]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/axi_crossbar_v2_1/hdl/axi_crossbar_v2_1_vl_rfs.v:3103]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

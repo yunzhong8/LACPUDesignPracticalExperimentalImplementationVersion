@@ -1,0 +1,82 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.cpu.Predactor_item.Predactor_Pht_item.pht_ram_item.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.cpu.Predactor_item.Predactor_Btb_item.btb_ram_item.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.icache_item.cache_table_item.cache_way_item0.tagv_ram_item.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.icache_item.cache_table_item.cache_way_item0.bank0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.icache_item.cache_table_item.cache_way_item0.bank1.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.icache_item.cache_table_item.cache_way_item0.bank2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.icache_item.cache_table_item.cache_way_item0.bank3.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.icache_item.cache_table_item.cache_way_item1.tagv_ram_item.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.icache_item.cache_table_item.cache_way_item1.bank0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.icache_item.cache_table_item.cache_way_item1.bank1.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.icache_item.cache_table_item.cache_way_item1.bank2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.icache_item.cache_table_item.cache_way_item1.bank3.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.dcache_item.cache_table_item.cache_way_item0.tagv_ram_item.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.dcache_item.cache_table_item.cache_way_item0.bank0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.dcache_item.cache_table_item.cache_way_item0.bank1.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.dcache_item.cache_table_item.cache_way_item0.bank2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.dcache_item.cache_table_item.cache_way_item0.bank3.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.dcache_item.cache_table_item.cache_way_item1.tagv_ram_item.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.dcache_item.cache_table_item.cache_way_item1.bank0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.dcache_item.cache_table_item.cache_way_item1.bank1.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.dcache_item.cache_table_item.cache_way_item1.bank2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_cpu.mycpu_cache_item.dcache_item.cache_table_item.cache_way_item1.bank3.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_axi_ram.ram.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+==============================================================
+Test begin!
+stream copy test begin.
+
+stream copy PASS!
+
+stream copy: Total Count(SoC count) = 0x1c9b3
+
+stream copy: Total Count(CPU count) = 0x19edb
+

@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../../../rtl/myCPU/IP/pht_ram/sim/pht_ram.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

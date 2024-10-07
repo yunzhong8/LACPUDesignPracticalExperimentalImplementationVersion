@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="data_bank_synth_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1685418787">
+  <File Type="RDS-UTIL" Name="data_bank_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="data_bank_utilization_synth.pb"/>
+  <File Type="RDS-RDS" Name="data_bank.vds"/>
+  <File Type="RDS-DCP" Name="data_bank.dcp"/>
+  <File Type="PA-TCL" Name="data_bank.tcl"/>
+  <File Type="REPORTS-TCL" Name="data_bank_reports.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/data_bank">
+    <File Path="$PPRDIR/Cache/ip/data_bank/data_bank.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="data_bank"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/data_bank">
+    <File Path="$PPRDIR/Cache/ip/data_bank/data_bank.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="data_bank"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

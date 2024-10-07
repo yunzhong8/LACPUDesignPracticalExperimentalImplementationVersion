@@ -1,0 +1,964 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jul 19 14:19:04 2023
+# Process ID: 533553
+# Current directory: /home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1
+# Command line: vivado -log soc_axi_lite_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source soc_axi_lite_top.tcl -notrace
+# Log file: /home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top.vdi
+# Journal file: /home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source soc_axi_lite_top.tcl -notrace
+Command: link_design -top soc_axi_lite_top -part xc7a200tfbg676-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.dcp' for cell 'pll.clk_pll'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/axi_clock_converter/axi_clock_converter.dcp' for cell 'u_axi_clock_sync'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.dcp' for cell 'u_axi_crossbar_1x2'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_ram/axi_ram.dcp' for cell 'u_axi_ram/ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/btb_ram/btb_ram.dcp' for cell 'u_cpu/mycpu_cache_item/cpu/Predactor_item/Predactor_Btb_item/btb_ram_item'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/pht_ram/pht_ram.dcp' for cell 'u_cpu/mycpu_cache_item/cpu/Predactor_item/Predactor_Pht_item/pht_ram_item'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/ip/data_bank/data_bank.dcp' for cell 'u_cpu/mycpu_cache_item/dcache_item/cache_table_item/cache_way_item0/bank0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/Cache/ip/tagv_ram/tagv_ram.dcp' for cell 'u_cpu/mycpu_cache_item/dcache_item/cache_table_item/cache_way_item0/tagv_ram_item'
+Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.26 . Memory (MB): peak = 1748.023 ; gain = 0.000 ; free physical = 1333 ; free virtual = 7540
+INFO: [Netlist 29-17] Analyzing 1814 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Finished Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.xdc:57]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2543.324 ; gain = 596.023 ; free physical = 751 ; free virtual = 6959
+Finished Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'num_data[0]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[1]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[2]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[3]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[4]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[5]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[6]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[7]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[8]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[9]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[10]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[11]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[12]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[13]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[14]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[15]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[16]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[17]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[18]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[19]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[20]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[21]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[22]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[23]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[24]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[25]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[26]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[27]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[28]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[29]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[30]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[31]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'num_data[*]'. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc]
+Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/axi_clock_converter/axi_clock_converter_clocks.xdc] for cell 'u_axi_clock_sync/inst'
+Finished Parsing XDC File [/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/axi_clock_converter/axi_clock_converter_clocks.xdc] for cell 'u_axi_clock_sync/inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.cdc_wr_rst_busy_ic_3.xpm_cdc_single_inst3'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.cdc_wr_rst_busy_ic_1.xpm_cdc_single_inst1'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.cdc_wr_rst_busy_ic_2.xpm_cdc_single_inst2'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [/home/ysyx/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2549.262 ; gain = 0.000 ; free physical = 775 ; free virtual = 6984
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 42 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 38 instances
+
+17 Infos, 34 Warnings, 33 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 2549.262 ; gain = 1103.434 ; free physical = 775 ; free virtual = 6984
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2613.293 ; gain = 64.031 ; free physical = 755 ; free virtual = 6978
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: e66adcd1
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.67 . Memory (MB): peak = 2613.293 ; gain = 0.000 ; free physical = 742 ; free virtual = 6951
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 256 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: e805306e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2686.277 ; gain = 0.000 ; free physical = 604 ; free virtual = 6813
+INFO: [Opt 31-389] Phase Retarget created 18 cells and removed 54 cells
+INFO: [Opt 31-1021] In phase Retarget, 31 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 12eee1d6a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2686.277 ; gain = 0.000 ; free physical = 604 ; free virtual = 6813
+INFO: [Opt 31-389] Phase Constant propagation created 5 cells and removed 34 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 30 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 145fde97c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2686.277 ; gain = 0.000 ; free physical = 593 ; free virtual = 6811
+INFO: [Opt 31-389] Phase Sweep created 20 cells and removed 179 cells
+INFO: [Opt 31-1021] In phase Sweep, 150 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 145fde97c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2686.277 ; gain = 0.000 ; free physical = 593 ; free virtual = 6811
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 145fde97c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2686.277 ; gain = 0.000 ; free physical = 593 ; free virtual = 6811
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 114f1acf0
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2686.277 ; gain = 0.000 ; free physical = 593 ; free virtual = 6811
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 46 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              18  |              54  |                                             31  |
+|  Constant propagation         |               5  |              34  |                                             30  |
+|  Sweep                        |              20  |             179  |                                            150  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             46  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2686.277 ; gain = 0.000 ; free physical = 593 ; free virtual = 6811
+Ending Logic Optimization Task | Checksum: a25ae0ea
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2686.277 ; gain = 0.000 ; free physical = 603 ; free virtual = 6811
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.840 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 278 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 32 newly gated: 2 Total Ports: 556
+Ending PowerOpt Patch Enables Task | Checksum: 16f4f7b67
+
+Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:00.80 . Memory (MB): peak = 3388.695 ; gain = 0.000 ; free physical = 653 ; free virtual = 6719
+Ending Power Optimization Task | Checksum: 16f4f7b67
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:40 . Memory (MB): peak = 3388.695 ; gain = 702.418 ; free physical = 690 ; free virtual = 6756
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 16f4f7b67
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3388.695 ; gain = 0.000 ; free physical = 690 ; free virtual = 6756
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3388.695 ; gain = 0.000 ; free physical = 690 ; free virtual = 6756
+Ending Netlist Obfuscation Task | Checksum: 1833089a3
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3388.695 ; gain = 0.000 ; free physical = 690 ; free virtual = 6756
+INFO: [Common 17-83] Releasing license: Implementation
+47 Infos, 34 Warnings, 33 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:08 ; elapsed = 00:00:48 . Memory (MB): peak = 3388.695 ; gain = 839.434 ; free physical = 690 ; free virtual = 6756
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3388.695 ; gain = 0.000 ; free physical = 666 ; free virtual = 6742
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3388.695 ; gain = 0.000 ; free physical = 662 ; free virtual = 6739
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3388.695 ; gain = 0.000 ; free physical = 656 ; free virtual = 6729
+INFO: [runtcl-4] Executing : report_drc -file soc_axi_lite_top_drc_opted.rpt -pb soc_axi_lite_top_drc_opted.pb -rpx soc_axi_lite_top_drc_opted.rpx
+Command: report_drc -file soc_axi_lite_top_drc_opted.rpt -pb soc_axi_lite_top_drc_opted.pb -rpx soc_axi_lite_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_2) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[100].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[100].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[100].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[101].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[101].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[101].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[102].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[102].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[102].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[103].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[103].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[103].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[104].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[104].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[104].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_10) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[105].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[105].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[105].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[106].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[106].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[106].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[107].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[107].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[107].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[108].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[108].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[108].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[109].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[109].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[109].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[110].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[110].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[110].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[111].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[111].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[111].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[112].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[112].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[112].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_ENARDEN_cooolgate_en_sig_26) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[113].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[113].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[113].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[114].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[114].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[114].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[115].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[115].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[115].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[116].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[116].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[116].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[117].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[117].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENARDEN (net: u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_blk_mem_gen/valid.cstr/ramloop[117].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1) which is driven by a register (u_axi_clock_sync/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 621 ; free virtual = 6695
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: a22785f3
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 621 ; free virtual = 6695
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 621 ; free virtual = 6695
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17f8ab758
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 618 ; free virtual = 6691
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 16a80524b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 572 ; free virtual = 6655
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 16a80524b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 572 ; free virtual = 6655
+Phase 1 Placer Initialization | Checksum: 16a80524b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 569 ; free virtual = 6652
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 15ba950ce
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:07 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 559 ; free virtual = 6632
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 494 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 261 nets or cells. Created 77 new cells, deleted 184 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/icache_item/index_op_queue/addra[6] could not be optimized because driver u_cpu/mycpu_cache_item/icache_item/index_op_queue/tagv_ram_item_i_4 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/cpu/RFI/CsrI/idle_stall_reg_reg_0[6] could not be optimized because driver u_cpu/mycpu_cache_item/cpu/RFI/CsrI/pht_ram_item_i_20 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/icache_item/index_op_queue/addra[2] could not be optimized because driver u_cpu/mycpu_cache_item/icache_item/index_op_queue/tagv_ram_item_i_8 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/cpu/RFI/CsrI/idle_stall_reg_reg_0[7] could not be optimized because driver u_cpu/mycpu_cache_item/cpu/RFI/CsrI/pht_ram_item_i_19 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/icache_item/index_op_queue/addra[3] could not be optimized because driver u_cpu/mycpu_cache_item/icache_item/index_op_queue/tagv_ram_item_i_7 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/cpu/RFI/CsrI/idle_stall_reg_reg_0[8] could not be optimized because driver u_cpu/mycpu_cache_item/cpu/RFI/CsrI/pht_ram_item_i_18 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/icache_item/index_op_queue/addra[4] could not be optimized because driver u_cpu/mycpu_cache_item/icache_item/index_op_queue/tagv_ram_item_i_6 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/cpu/RFI/CsrI/idle_stall_reg_reg_0[5] could not be optimized because driver u_cpu/mycpu_cache_item/cpu/RFI/CsrI/pht_ram_item_i_21 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/icache_item/index_op_queue/addra[1] could not be optimized because driver u_cpu/mycpu_cache_item/icache_item/index_op_queue/tagv_ram_item_i_9 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/icache_item/index_op_queue/addra[7] could not be optimized because driver u_cpu/mycpu_cache_item/icache_item/index_op_queue/tagv_ram_item_i_3 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/cpu/RFI/CsrI/idle_stall_reg_reg_0[9] could not be optimized because driver u_cpu/mycpu_cache_item/cpu/RFI/CsrI/pht_ram_item_i_17 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/icache_item/index_op_queue/addra[5] could not be optimized because driver u_cpu/mycpu_cache_item/icache_item/index_op_queue/tagv_ram_item_i_5 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_35 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__28 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/cpu/RFI/CsrI/idle_stall_reg_reg_0[4] could not be optimized because driver u_cpu/mycpu_cache_item/cpu/RFI/CsrI/pht_ram_item_i_22 could not be replicated
+INFO: [Physopt 32-117] Net u_cpu/mycpu_cache_item/icache_item/index_op_queue/addra[0] could not be optimized because driver u_cpu/mycpu_cache_item/icache_item/index_op_queue/tagv_ram_item_i_10 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_24 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__17 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_11 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__3 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_21 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__6 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_3 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__11 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_9 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__1 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_46 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__39 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_43 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__36 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_42 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__35 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_57 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__50 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_21 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__14 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_29 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__30 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_20 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__13 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_37 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__30 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19]_2 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__10 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/gaxi_full_sm.gaxifull_mem_slave.addr_cnt_enb_r_reg[19] could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__7 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_29 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__22 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_3 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__71 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_28 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__29 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_10 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__2 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_56 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__49 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_1 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__69 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_26 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__19 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_60 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__53 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_18 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__3 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/s_axi_araddr[18]_2 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_rd_sm/axi_read_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2__62 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_34 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__27 could not be replicated
+INFO: [Physopt 32-117] Net u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/gaxif_ms_addr_gen.addr_cnt_enb_reg[13]_39 could not be optimized because driver u_axi_ram/ram/U0/inst_blk_mem_gen/gnbram.gaxibmg.axi_wr_fsm/axi_wr_fsm/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__32 could not be replicated
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 534 ; free virtual = 6606
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           77  |            184  |                   261  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           77  |            184  |                   261  |           0  |           8  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1779613ba
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:29 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 530 ; free virtual = 6603
+Phase 2.2 Global Placement Core | Checksum: 207e4aefd
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:33 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 535 ; free virtual = 6598
+Phase 2 Global Placement | Checksum: 207e4aefd
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:33 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 545 ; free virtual = 6608
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1ea2443c1
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:35 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 538 ; free virtual = 6611
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1bfe8528f
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:00:39 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 425 ; free virtual = 6605
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1df82dd5a
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:39 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 437 ; free virtual = 6617
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 243b46e40
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:39 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 437 ; free virtual = 6617
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 2447ded0f
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:00:44 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 513 ; free virtual = 6635
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 267dc19c1
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:00:52 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 517 ; free virtual = 6615
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 2873d7500
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:00:53 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 507 ; free virtual = 6615
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 24f80ec8c
+
+Time (s): cpu = 00:02:18 ; elapsed = 00:00:54 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 507 ; free virtual = 6615
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 24e42c472
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:01:03 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 504 ; free virtual = 6612
+Phase 3 Detail Placement | Checksum: 24e42c472
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:01:03 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 504 ; free virtual = 6612
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1be0cfae4
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net u_cpu/mycpu_cache_item/cpu/RFI/CsrI/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net u_cpu/mycpu_cache_item/cpu/WbStageI/MEMWBI/line1_now_valid_o0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 2, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1be0cfae4
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:01:07 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 512 ; free virtual = 6609
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.094. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 18b459ec6
+
+Time (s): cpu = 00:03:37 ; elapsed = 00:01:35 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 500 ; free virtual = 6607
+Phase 4.1 Post Commit Optimization | Checksum: 18b459ec6
+
+Time (s): cpu = 00:03:37 ; elapsed = 00:01:35 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 499 ; free virtual = 6607
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 18b459ec6
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:35 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 499 ; free virtual = 6607
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 18b459ec6
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:35 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 499 ; free virtual = 6607
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 499 ; free virtual = 6607
+Phase 4.4 Final Placement Cleanup | Checksum: 1a79a5af1
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:35 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 499 ; free virtual = 6607
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1a79a5af1
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:35 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 499 ; free virtual = 6607
+Ending Placer Task | Checksum: f15e80f6
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:35 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 499 ; free virtual = 6607
+INFO: [Common 17-83] Releasing license: Implementation
+127 Infos, 55 Warnings, 33 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:41 ; elapsed = 00:01:38 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 551 ; free virtual = 6659
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 551 ; free virtual = 6659
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 512 ; free virtual = 6647
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 536 ; free virtual = 6654
+INFO: [runtcl-4] Executing : report_io -file soc_axi_lite_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.20 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 522 ; free virtual = 6640
+INFO: [runtcl-4] Executing : report_utilization -file soc_axi_lite_top_utilization_placed.rpt -pb soc_axi_lite_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file soc_axi_lite_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 541 ; free virtual = 6649
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 523 ; free virtual = 6632
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.094 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1d50b8623
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:04 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 501 ; free virtual = 6609
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.094 | TNS=0.000 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 2 DSP Register Optimization | Checksum: 1d50b8623
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:04 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 488 ; free virtual = 6606
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.094 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.094 | TNS=0.000 |
+Phase 3 Critical Path Optimization | Checksum: 1d50b8623
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:04 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 488 ; free virtual = 6606
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 489 ; free virtual = 6607
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.094 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Path  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 489 ; free virtual = 6607
+Ending Physical Synthesis Task | Checksum: 1d50b8623
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:04 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 489 ; free virtual = 6607
+INFO: [Common 17-83] Releasing license: Implementation
+141 Infos, 55 Warnings, 33 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:08 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 503 ; free virtual = 6621
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 503 ; free virtual = 6621
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 463 ; free virtual = 6608
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 494 ; free virtual = 6622
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 3098aaf8 ConstDB: 0 ShapeSum: b67354ce RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 6f5738cb
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:35 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 300 ; free virtual = 6400
+Post Restoration Checksum: NetGraph: 538e4fe7 NumContArr: 1bc8e8e4 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 6f5738cb
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:36 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 304 ; free virtual = 6405
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 6f5738cb
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:36 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 264 ; free virtual = 6362
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 6f5738cb
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:36 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 264 ; free virtual = 6362
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 115d2e621
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:43 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 230 ; free virtual = 6335
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.138  | TNS=0.000  | WHS=-0.154 | THS=-79.033|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 17176f546
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:46 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 232 ; free virtual = 6327
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.138  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1b28e176a
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:46 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 231 ; free virtual = 6326
+Phase 2 Router Initialization | Checksum: 14df5967d
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:46 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 231 ; free virtual = 6326
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00238891 %
+  Global Horizontal Routing Utilization  = 0.000594845 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 23429
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 23424
+  Number of Partially Routed Nets     = 5
+  Number of Node Overlaps             = 4
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 224bfb8e3
+
+Time (s): cpu = 00:04:13 ; elapsed = 00:01:20 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 300 ; free virtual = 6292
+INFO: [Route 35-580] Design has 1 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|          sys_clk_clk_pll |          sys_clk_clk_pll |u_axi_crossbar_1x2/inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/r.r_pipe/m_payload_i_reg[9]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 8553
+ Number of Nodes with overlaps = 3438
+ Number of Nodes with overlaps = 1518
+ Number of Nodes with overlaps = 449
+ Number of Nodes with overlaps = 211
+ Number of Nodes with overlaps = 100
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.299 | TNS=-0.415 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1215c6109
+
+Time (s): cpu = 00:09:15 ; elapsed = 00:02:56 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 319 ; free virtual = 6301
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2004
+ Number of Nodes with overlaps = 861
+ Number of Nodes with overlaps = 322
+ Number of Nodes with overlaps = 157
+ Number of Nodes with overlaps = 60
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.061 | TNS=-0.061 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1c0ab4a1f
+
+Time (s): cpu = 00:10:24 ; elapsed = 00:03:24 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 332 ; free virtual = 6314
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 1746
+ Number of Nodes with overlaps = 753
+ Number of Nodes with overlaps = 260
+ Number of Nodes with overlaps = 93
+ Number of Nodes with overlaps = 53
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.088 | TNS=-0.107 | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 21c3e27e2
+
+Time (s): cpu = 00:11:24 ; elapsed = 00:03:49 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 306 ; free virtual = 6298
+Phase 4 Rip-up And Reroute | Checksum: 21c3e27e2
+
+Time (s): cpu = 00:11:25 ; elapsed = 00:03:49 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 306 ; free virtual = 6298
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 14e347f04
+
+Time (s): cpu = 00:11:29 ; elapsed = 00:03:50 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 313 ; free virtual = 6295
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.018  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 16ce5856d
+
+Time (s): cpu = 00:11:29 ; elapsed = 00:03:50 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 313 ; free virtual = 6295
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 16ce5856d
+
+Time (s): cpu = 00:11:29 ; elapsed = 00:03:50 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 313 ; free virtual = 6295
+Phase 5 Delay and Skew Optimization | Checksum: 16ce5856d
+
+Time (s): cpu = 00:11:29 ; elapsed = 00:03:51 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 313 ; free virtual = 6295
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 191fdecde
+
+Time (s): cpu = 00:11:34 ; elapsed = 00:03:52 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 304 ; free virtual = 6296
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.018  | TNS=0.000  | WHS=0.028  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 206a924ad
+
+Time (s): cpu = 00:11:34 ; elapsed = 00:03:52 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 304 ; free virtual = 6296
+Phase 6 Post Hold Fix | Checksum: 206a924ad
+
+Time (s): cpu = 00:11:34 ; elapsed = 00:03:52 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 304 ; free virtual = 6296
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 6.37263 %
+  Global Horizontal Routing Utilization  = 7.27971 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 168c239fc
+
+Time (s): cpu = 00:11:34 ; elapsed = 00:03:52 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 304 ; free virtual = 6296
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 168c239fc
+
+Time (s): cpu = 00:11:34 ; elapsed = 00:03:52 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 305 ; free virtual = 6297
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: d0569e35
+
+Time (s): cpu = 00:11:36 ; elapsed = 00:03:54 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 314 ; free virtual = 6296
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.018  | TNS=0.000  | WHS=0.028  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: d0569e35
+
+Time (s): cpu = 00:11:36 ; elapsed = 00:03:54 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 316 ; free virtual = 6298
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:11:36 ; elapsed = 00:03:54 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 383 ; free virtual = 6365
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+160 Infos, 55 Warnings, 33 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:11:40 ; elapsed = 00:03:56 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 383 ; free virtual = 6365
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 383 ; free virtual = 6365
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 322 ; free virtual = 6352
+INFO: [Common 17-1381] The checkpoint '/home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3476.738 ; gain = 0.000 ; free physical = 360 ; free virtual = 6355
+INFO: [runtcl-4] Executing : report_drc -file soc_axi_lite_top_drc_routed.rpt -pb soc_axi_lite_top_drc_routed.pb -rpx soc_axi_lite_top_drc_routed.rpx
+Command: report_drc -file soc_axi_lite_top_drc_routed.rpt -pb soc_axi_lite_top_drc_routed.pb -rpx soc_axi_lite_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file soc_axi_lite_top_methodology_drc_routed.rpt -pb soc_axi_lite_top_methodology_drc_routed.pb -rpx soc_axi_lite_top_methodology_drc_routed.rpx
+Command: report_methodology -file soc_axi_lite_top_methodology_drc_routed.rpt -pb soc_axi_lite_top_methodology_drc_routed.pb -rpx soc_axi_lite_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/ysyx/weihui/la32_7pipline-cpu-master/mycpu_env/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1/soc_axi_lite_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:34 ; elapsed = 00:00:08 . Memory (MB): peak = 3486.738 ; gain = 0.000 ; free physical = 336 ; free virtual = 6331
+INFO: [runtcl-4] Executing : report_power -file soc_axi_lite_top_power_routed.rpt -pb soc_axi_lite_top_power_summary_routed.pb -rpx soc_axi_lite_top_power_routed.rpx
+Command: report_power -file soc_axi_lite_top_power_routed.rpt -pb soc_axi_lite_top_power_summary_routed.pb -rpx soc_axi_lite_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+172 Infos, 55 Warnings, 33 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:22 ; elapsed = 00:00:07 . Memory (MB): peak = 3486.738 ; gain = 0.000 ; free physical = 319 ; free virtual = 6323
+INFO: [runtcl-4] Executing : report_route_status -file soc_axi_lite_top_route_status.rpt -pb soc_axi_lite_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file soc_axi_lite_top_timing_summary_routed.rpt -pb soc_axi_lite_top_timing_summary_routed.pb -rpx soc_axi_lite_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file soc_axi_lite_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file soc_axi_lite_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file soc_axi_lite_top_bus_skew_routed.rpt -pb soc_axi_lite_top_bus_skew_routed.pb -rpx soc_axi_lite_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 19 14:26:55 2023...
